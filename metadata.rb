@@ -1,8 +1,7 @@
-name             'ws-testhelper'
+name             'pw-testhelper'
 maintainer       'Alexander Birk'
 maintainer_email 'birk@pingworks.de'
 license          'Apache 2.0'
-description      'Installs/Configures ws-testhelper'
-long_description 'Installs/Configures ws-testhelper'
+description      'Installs/Configures pw-testhelper'
+long_description 'Installs/Configures pw-testhelper'
 version          '0.1.0'
-
