@@ -1,15 +1,15 @@
 #
-# Cookbook Name:: pw-testhelper
+# Cookbook Name:: pw_testhelper
 # Recipe:: default
 #
 # Copyright (C) 2015 YOUR_NAME
 #
 # All rights reserved - Do Not Redistribute
 #
-node.default['pw-testhelper']['directory'] = "/tmp/serverspec-test"
-node.default['pw-testhelper']['file_name'] = "node.json"
+node.default['pw_testhelper']['directory'] = "/tmp/serverspec-test"
+node.default['pw_testhelper']['file_name'] = "node.json"
 
-directory node.default['pw-testhelper']['directory'] do
+directory node.default['pw_testhelper']['directory'] do
   recursive true
 end
 
@@ -27,6 +27,6 @@ ruby_block "dump_node_attributes" do
     recipe_json << " \] }"
     attrs = Chef::Mixin::DeepMerge.deep_merge(JSON.parse(recipe_json), attrs)
 
-    File.open("#{node.default['pw-testhelper']['directory']}/#{node.default['pw-testhelper']['file_name']}", 'w') { |file| file.write(JSON.pretty_generate(attrs)) }
+    File.open("#{node.default['pw_testhelper']['directory']}/#{node.default['pw_testhelper']['file_name']}", 'w') { |file| file.write(JSON.pretty_generate(attrs)) }
   end
 end

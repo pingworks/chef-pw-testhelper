@@ -14,5 +14,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[pw-testhelper::default]
+      - recipe[pw_testhelper::default]
     attributes:

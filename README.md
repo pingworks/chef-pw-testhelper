@@ -1,4 +1,4 @@
-# pw-testhelper-cookbook
+# pw_testhelper-cookbook
 
 TODO: Enter the cookbook description here.
 
@@ -16,7 +16,7 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['pw-testhelper']['bacon']</tt></td>
+    <td><tt>['pw_testhelper']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -25,14 +25,14 @@ TODO: List your supported platforms.
 
 ## Usage
 
-### pw-testhelper::default
+### pw_testhelper::default
 
-Include `pw-testhelper` in your node's `run_list`:
+Include `pw_testhelper` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[pw-testhelper::default]"
+    "recipe[pw_testhelper::default]"
   ]
 }
 ```
